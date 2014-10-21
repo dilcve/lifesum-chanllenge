@@ -1,6 +1,3 @@
-lifesum-chanllenge
-==================
-
 #Lifesum-Chanllenge
 
 This app was made only for Lifesum Chanllege.
