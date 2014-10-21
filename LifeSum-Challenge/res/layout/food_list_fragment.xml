@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/buttonSearch"
+        android:hint="@string/text_search_hint"
+        android:imeOptions="actionDone"
+        android:paddingTop="16dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/text_search" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editSearch"
+        tools:ignore="HardcodedText" >
+
+        <TextView
+            android:id="@+id/placeHolderLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_placeholder_search"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="8dp" />
+
+        <TextView
+            android:id="@+id/text_emptyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/text_empty_list"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..." />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

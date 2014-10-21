@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lifesum Challenge</string>
+    <string name="text_menu_favorites">Favorites</string>
+    <string name="text_menu_list">List Style</string>
+    <string name="text_search_hint">Search for food</string>
+    <string name="text_search_label">lifesum</string>
+    <string name="text_search">Search</string>
+    <string name="text_empty_search">Type a food for search!</string>
+    <string name="text_placeholder_search">Go ahead search for your favorites foods!</string>
+    <string name="text_empty_list">Sorry but we didn\'t find anything for\n \'%s\'</string>
+    <string name="text_local_empty_list">You didn\'t save anything yet!</string>
+    <string name="text_local_empty_button">Go search!</string>
+    <string name="text_food_saved">Food saved in favorites</string>
+    <string name="text_saving">saving food…</string>
+    
+
+</resources>

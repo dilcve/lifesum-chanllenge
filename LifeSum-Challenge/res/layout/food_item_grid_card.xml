@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    android:animateLayoutChanges="true"
+    tools:ignore="ContentDescription,HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/img_verified" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coca Cola"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/text_calories"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="147 kcal each Can"
+            android:textColor="#999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_verified"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_verified_checkmark" />
+
+</RelativeLayout>
