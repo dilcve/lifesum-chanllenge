@@ -1,6 +1,6 @@
-#Lifesum-Chanllenge
+#Lifesum-Challenge
 
-This app was made only for Lifesum Chanllege.
+This app was made only for Lifesum Challenge.
 
 To search for food, use the search from field. After search returns some results you can save items locally.
 
